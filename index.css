@@ -115,7 +115,7 @@ font-size:30px ;
     transition: 0.5s;
 
 }
-.tab-links.active-link:hover::after{
+.tab-links.active-link::after{
     width: 60%;
 }
 .tab-contents ul li{
@@ -125,4 +125,10 @@ font-size:30px ;
 .tab-contents ul li span{
     color: #1eaba2;
     font-size: 14px;
+}
+.tab-contents{
+    display: none;
+}
+ .tab-contents.active-tab{
+    display: block;
 }
