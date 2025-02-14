@@ -180,51 +180,87 @@ font-size:30px ;
 /* ----------protfolio---- */
 #project{
     padding: 50px 0;
+
 }
 .project-list{
     display:grid;
     grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
     grid-gap: 40px;
     margin-top: 50px;
+    padding: 20px;
 
 }
-.project-list div{
-    background-color: #262626;
-    padding: 40px;
-    
-}
+
 .proj{
     border-radius: 10px;
     position: relative;
     overflow: hidden;
-    background-color: #ff004f;
 }
 .proj img{
     width: 100%;
+    height: 500px ;
     border-radius:10px;
     display: block;
+    transition:transform 0.5s ;
 
 }
 .layer{
-    height: 7700%;
+    height: 0;
     width: 100%;
-    background:linear-gradient(rgba(0,0,0,0.6),#ff004f)
+    background:linear-gradient(rgba(0,0,0,0.6),#1e1155);
     border-radius: 10px;
-    /* position: absolute; */
+    position: absolute;
     left: 0;
     bottom: 0;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    font-size: 14px;
+    transition: height 0.6s;
+
+}
+.layer h2{
+    font-weight: 500;
+    margin-bottom: 20px;
 
 }
 .layer a{
+    margin-top: 20px;
     text-decoration: none;
-    color: #fafbfb;
+    color: #0e140c;
+    font-size: 18px;
+    line-height: 60px;
+    background-color:#fff;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+
+}
+.proj:hover img{
+    transform: scale(1.1);
+}
+.proj:hover .layer{
+    height: 100%;
 }
 .layer p{
     color: #ababaa;
 }
-.layer a i{
-    font-size: 30px;
-    margin-top: 20px;
-    color: #43ba73;
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #43ba73;
+    padding: 14px 50px;
+    border-radius: 7px;
+    text-decoration: none;
+    color: wheat;
+    transition: background 0.5s;
+}
+.btn:hover{
+    background: #0fdfea;
 }
