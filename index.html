@@ -15,13 +15,15 @@
         <div class="container">
             <nav>
                 <img src="IMages/gm.png" alt="logo" class="logo">
-                <ul>
+                <ul id="sideMenu">
                     <li><a href="#header">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#services">Services</a></li>
                     <li><a href="#project">Project</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
                 </ul>
+                <i class="fa-solid fa-bars"  onclick="openMenu()"></i>
             </nav>
             <div class="header-text">
                 <div>
@@ -150,7 +152,7 @@
 </div>
 
 <!-- ---------contact------ -->
-<div class="contact">
+<div id="contact">
     <div class="container">
         <div class="row">
             <div class="contact-left">
@@ -166,13 +168,14 @@
                 <a  href="IMages/Resume-Gaurav Meena (1).pdf"download class="btn btn_cv"></i> Download CV</a>
             </div>
             <div class="contact-right">
-                <form>
+                <form name="submit-to-google-sheet">
                     <input name="Name" placeholder="Hey, what's your name? 🧐" type="text" required>
                     <input name="mobile number" type="text" placeholder="+91    Drop your digits 📱" required>
-                    <input type="email" name="email" id="" placeholder="Your email address, please ✉️" required>
+                    <input type="email" name="Email" id="" placeholder="Your email address, please ✉️" required>
                     <textarea name="Message" rows="6" placeholder="Tell us what's on your mind... 💭" required></textarea>
                     <button type="submit" class="btn btn_cv">Send It to the Moon 🚀</button>
                 </form>
+                <span id="msg"></span>
             </div>
         </div>
     </div>
