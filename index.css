@@ -101,20 +101,17 @@ nav ul li a:hover::after{
     margin: 20px;
     border-radius: 10px;
     transition: transform 0.5s;
-
+    
 }
-/* .code{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-} */
+.code {
+    margin-left: 100px;
+}
 .about-col-1 img:hover{
     transform: scale(1.2);
     transform: translateX(20px); 
 }
 .about-col-2{
-   flex-basis: 60%;
+   flex-basis: 55%;
 }
 .sub-title{
     font-size: 60px;
@@ -204,7 +201,7 @@ nav ul li a:hover::after{
     transform: translateY(-10px);
 }
 
-/* ----------protfolio---- */
+/* ----------project---- */
 #project{
     padding: 50px 0;
 
