@@ -6,7 +6,7 @@
 }
 body{
     background-color: rgb(2, 1, 14);
-    color: rgb(97, 213, 193);
+    color: rgb(37, 170, 148);
 
 }
 html{
@@ -127,6 +127,11 @@ nav ul li a:hover::after{
     cursor: pointer;
     font-weight: 500;
     position: relative;
+    padding: 10px;
+}
+.tab-links:hover{
+    background: #3d3c3c;
+    border-radius: 5px;
 }
 .tab-links::after{
     content: ' ';
@@ -140,7 +145,7 @@ nav ul li a:hover::after{
 
 }
 .tab-links.active-link::after{
-    width: 60%;
+    width: 50%;
 }
 .tab-contents ul li{
     list-style: none;
@@ -161,7 +166,7 @@ nav ul li a:hover::after{
 }
 .service-list{
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
     grid-gap: 40px;
     margin-top: 50px;
 
@@ -231,7 +236,7 @@ nav ul li a:hover::after{
 .layer{
     height: 0;
     width: 100%;
-    background:linear-gradient(rgba(0,0,0,0.6),#1e1155);
+    background:linear-gradient(rgba(0,0,0,0.6),#08d4d4);
     border-radius: 10px;
     position: absolute;
     left: 0;
@@ -282,11 +287,12 @@ nav ul li a:hover::after{
     padding: 14px 50px;
     border-radius: 7px;
     text-decoration: none;
-    color: wheat;
+    color:red;
     transition: background 0.5s;
 }
 .btn:hover{
     background: #0fdfea;
+    color: black;
 }
 
 
@@ -324,7 +330,10 @@ nav ul li a:hover::after{
 }
 .btn.btn_cv{
     display: inline-block;
-    color: #f50909;
+    color:red;
+}
+.btn.btn_cv:hover{
+    color: black;
 }
 .arrow a i{
     color: white;
@@ -364,6 +373,7 @@ form .btn_cv{
     font-weight: 300;
     margin-top: 20px;
 }
+
 
 
 /* ---------media Quary------- */
